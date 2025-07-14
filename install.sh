@@ -94,26 +94,22 @@ adjust_format() {
   true
 }
 adjust_os() {
-  # adjust archive name based on OS
   case ${OS} in
     386) OS=i386 ;;
     amd64) OS=x86_64 ;;
+    arm64) OS=arm64 ;;
     darwin) OS=Darwin ;;
     linux) OS=Linux ;;
     windows) OS=Windows ;;
   esac
-  true
 }
 adjust_arch() {
-  # adjust archive name based on ARCH
   case ${ARCH} in
     386) ARCH=i386 ;;
     amd64) ARCH=x86_64 ;;
-    darwin) ARCH=Darwin ;;
-    linux) ARCH=Linux ;;
-    windows) ARCH=Windows ;;
+    arm64) ARCH=arm64 ;;
+    # ... other cases ...
   esac
-  true
 }
 
 cat /dev/null <<EOF
