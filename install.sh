@@ -344,7 +344,7 @@ End of functions from https://github.com/client9/shlib
 EOF
 
 PROJECT_NAME="envault"
-OWNER=pratishshr
+OWNER=mclqa
 REPO="envault"
 BINARY=envault
 FORMAT=tar.gz
